@@ -1,0 +1,399 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+body {
+    background: #fafafa;
+}
+
+ul {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+i {
+    color: #000000;
+}
+
+.jumbotron {
+    text-align: center;
+    margin: 0px;
+}
+
+#nav {
+    padding: 0;
+}
+
+#box_nav {
+    height: 50px;
+    background: white;
+    display: flex;
+    padding: 0;
+}
+
+.nav_item {
+    padding: 0;
+}
+
+#navbar {
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    padding: 0;
+}
+
+.post_show {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#login_box {
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+}
+
+#sign_box {
+    width: 40%;
+    margin: 0px auto;
+    display: block;
+}
+
+#login_btn {
+    margin: 20px 0px;
+}
+
+#sign_btn {
+    margin: 20px 0px;
+}
+
+img {
+    max-width: 100%; /* This rule is very important, please do not ignore this! */
+    max-height: 100%; /* This rule is very important, please do not ignore this! */
+}
+
+#form_upload {
+    width: 500px;
+    margin: 10px auto;
+}
+
+#post_btn {
+    float: left;
+    margin: 10px 0;
+}
+
+#logout {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#change_username {
+    margin: 20px 0;
+    width: 100%;
+}
+
+#in_auth {
+    margin: 20px 0;
+}
+
+#auth_box {
+    border: 1px solid #e6e6e6;
+    width: 30%;
+    height: 100%;
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#auth {
+    font-size: 28px;
+    font-family: none;
+}
+
+#img_prof {
+    display: inline-block;
+}
+
+#uploadFile {
+    width: 100%;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.user_post {
+    text-align: center;
+}
+
+.box_post {
+    width: 500px;
+    margin: 0px auto 50px auto;
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+
+}
+
+.info_post {
+    display: flex;
+    height: 50px;
+    padding: 10px 10px;
+}
+
+.btn_like {
+    cursor: pointer;
+}
+
+.count {
+    margin: 0;
+}
+
+.cm_icon {
+    cursor: pointer;
+}
+
+.cm_input, textarea, .btn_send {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.btn_send:hover {
+    background: none;
+    color: black;
+}
+
+.cm_div {
+    display: flex;
+    text-align: left;
+}
+
+.cm {
+    width: 380px;
+}
+
+.text_com {
+    overflow-wrap: break-word;
+}
+
+.center_cm {
+    margin: 0px 10px;
+}
+
+.more {
+    margin: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+.more:hover {
+    color: #2d2d2d;
+}
+
+.box_more {
+    text-align: center;
+}
+
+.div_all_info {
+    padding: 0 16px;
+}
+
+.box {
+    width: 20px;
+    height: 30px;
+    text-align: center;
+}
+
+.input_cm {
+    border-top: 1px solid gainsboro;
+}
+
+.new_id {
+    width: 100%;
+}
+
+#save_id {
+    display: none;
+}
+
+#imageUpload {
+    display: none;
+}
+
+#profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#edit_profile {
+    width: 100%;
+}
+
+#set_btn {
+    margin: 0 auto;
+}
+
+#change_pass {
+    width: 100%;
+}
+
+.all_post {
+    width: 500px;
+}
+
+.img_profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.div_img_profile {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.user_post {
+    margin: 0;
+}
+
+#con_prof {
+    padding: 70px 70px 0;
+}
+
+#box_info {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+#img_profile_box {
+    width: 30%;
+    text-align: center;
+}
+
+.info_user {
+    width: 70%;
+}
+
+#top_info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#edit_btn {
+    border: 1px solid #dbdbdb;
+    color: #262626;
+    margin: 0 10px;
+}
+
+#statistics {
+    display: flex;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#li_followers, #li_post {
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+.num_li {
+    color: #262626;
+    font-weight: 600;
+}
+
+#box_edit {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 60px auto 0;
+    max-width: 935px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+
+#ul_box_edit {
+    border-right: 1px solid #dbdbdb;
+    -webkit-flex-basis: 236px;
+    text-align: left;
+    margin: 0;
+}
+
+#info_box_edit {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 32px;
+}
+
+#down_box {
+    display: flex;
+    border-top: 1px solid #efefef;
+
+}
+
+#item_down_box {
+    margin: 0 auto;
+    display: flex;
+}
+.table_tab{
+    display: inline-block;
+    height: 50px;
+}
+.box_item{
+    margin: 15px 0;
+    display: block;
+}
+#item_1:focus,#item_2:focus,#item_3:focus,#item_4:focus{
+    border-top: 1px solid #262626;
+    margin-top: -1px;
+}
+@media (max-width: 550px) {
+    .box_post {
+        width: 100%;
+    }
+
+    .all_post {
+        width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #form_upload {
+        width: 100%;
+    }
+}
+.name_tab{
+    color: #999;
+    margin-left: 6px;
+}
+
+@media (min-width: 736px){
+    .table_tab:not(:last-child) {
+        margin-right: 60px;
+    }
+}

@@ -1,0 +1,3 @@
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=708263
+http://78.129.237.57:1935/live/vch1/playlist.m3u8?wowzasessionid=766840592
