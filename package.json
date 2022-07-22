@@ -14,7 +14,7 @@
     "express-handlebars": "latest",
     "express-session": "^1.15.6",
     "express-validator": "latest",
-    "file-type": "^3.9.0",
+    "file-type": "^16.5.4",
     "formidable": "^1.2.1",
     "fs": "^0.0.1-security",
     "fs-extra": "^7.0.1",
