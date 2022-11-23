@@ -29,6 +29,6 @@
     "read-chunk": "^2.0.0",
     "reload": "^2.3.1",
     "should": "~7.1.0",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.5.0"
   }
 }
