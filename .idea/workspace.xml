@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2209ee57-37e1-4a40-86be-1cc42a181a58" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2209ee57-37e1-4a40-86be-1cc42a181a58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/editProfile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/official.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/official.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/profile.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -24,108 +32,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="ok" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="860">
-              <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/account/editProfile.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4220">
-              <caret line="211" column="13" selection-start-line="211" selection-start-column="13" selection-end-line="211" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-              <folding>
-                <element signature="n#row#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#row#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#row#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../loginapp/public/js/bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../loginapp/routes/users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../loginapp/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/official.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#row#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#nav#0;n#row#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,7 +59,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../app_nodejs/server.js" />
-        <option value="C:/nodejs/node8.js" />
+        <option value="$PROJECT_DIR$/../../../../../nodejs/node8.js" />
         <option value="$PROJECT_DIR$/static/offcial.html" />
         <option value="$PROJECT_DIR$/static/signup.html" />
         <option value="E:/node/views/index.ejs" />
@@ -163,7 +69,7 @@
         <option value="$PROJECT_DIR$/static/js/official.js" />
         <option value="$PROJECT_DIR$/static/js/postLikeChecker.js" />
         <option value="E:/ok/static/js/home.js" />
-        <option value="C:/nodejs/static/js/home.js" />
+        <option value="$PROJECT_DIR$/../../../../../nodejs/static/js/home.js" />
         <option value="$PROJECT_DIR$/static/home.html" />
         <option value="$PROJECT_DIR$/static/js/editProfile.js" />
         <option value="$PROJECT_DIR$/static/official.html" />
@@ -179,12 +85,16 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-255" />
     <option name="y" value="-15" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectId" id="2PIBLtjGkqQuc8C6XBhOvBaozuc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -205,33 +115,24 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alireza/Desktop/github/miniGram&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ok\static" />
       <recent name="D:\ok\static\account" />
       <recent name="D:\ok\static\js" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="home.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="home.js" working-dir="$PROJECT_DIR$/static/js">
@@ -243,6 +144,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -453,6 +355,8 @@
       <workItem from="1580655136609" duration="1367000" />
       <workItem from="1580656733052" duration="101000" />
       <workItem from="1583485718288" duration="606000" />
+      <workItem from="1683134664299" duration="932000" />
+      <workItem from="1683195585745" duration="2289000" />
     </task>
     <servers />
   </component>
@@ -505,7 +409,18 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/js/jquery-3.3.1.js">
@@ -515,7 +430,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/CustomFileInputs/index.html" />
+    <entry file="file://$PROJECT_DIR$/../../CustomFileInputs/index.html" />
     <entry file="file://$PROJECT_DIR$/static/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -538,10 +453,10 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa2940.41282/app.js" />
-    <entry file="file://$USER_HOME$/Desktop/ajax-image-upload-with-node-js-master/app.js" />
+    <entry file="file://$PROJECT_DIR$/../../ajax-image-upload-with-node-js-master/app.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/js/app.js" />
-    <entry file="file://$USER_HOME$/Desktop/ajax-image-upload-with-node-js-master/package.json" />
-    <entry file="file://$USER_HOME$/Desktop/ajax-image-upload-with-node-js-master/views/index.html" />
+    <entry file="file://$PROJECT_DIR$/../../ajax-image-upload-with-node-js-master/package.json" />
+    <entry file="file://$PROJECT_DIR$/../../ajax-image-upload-with-node-js-master/views/index.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa6820.11881/filepond.js" />
     <entry file="file://E:/ok/server.js" />
     <entry file="file://$PROJECT_DIR$/static/test.html" />
@@ -566,8 +481,8 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa3468.28755/site/site.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa11900.33074/Aj7/Aj7/index.html" />
     <entry file="file://E:/ok/static/js/home.js" />
-    <entry file="file://C:/nodejs/node8.js" />
-    <entry file="file://C:/nodejs/static/js/home.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../nodejs/node8.js" />
+    <entry file="file://$PROJECT_DIR$/../../../../../nodejs/static/js/home.js" />
     <entry file="file://$PROJECT_DIR$/../animation/menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">

@@ -4,36 +4,32 @@
     <meta charset="UTF-8">
     <title>Profile</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-<row>
-    <nav class="navbar navbar-expand bg-light sticky-top " id="nav">
-        <div class="collapse navbar-collapse col" id="navbar">
-            <div class="col-10 offset-1" id="box_nav">
-                <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="text-align: center">
-                    <a class="nav-link nav_a pl-3" href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 nav_item"></div>
-                <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="display: flex">
-                    <!--<div class="col-4">-->
-                    <a class="nav-link nav_a pl-3" href="#"><i class="fas fa-home fa-2x"></i></a>
-                    <!--</div>-->
-                    <!--<div class="col-4">-->
-                    <a class="nav-link nav_a pl-3" href="/profile"><i class="far fa-heart fa-2x"></i></a>
-                    <!--</div>-->
-                    <!--<div class="col-4">-->
-                    <a class="nav-link nav_a pl-3" href="#"><i class="far fa-user-circle fa-2x"></i></a>
-                    <!--</div>-->
+<div>
+    <div>
+        <nav class="navbar navbar-expand bg-light sticky-top " id="nav">
+            <div class="collapse navbar-collapse col" id="navbar">
+                <div class="col-10 offset-1" id="box_nav">
+                    <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="text-align: center">
+                        <a class="nav-link nav_a pl-3" href="/"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 nav_item"></div>
+                    <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="display: flex">
+                        <a class="nav-link nav_a pl-3" href="/profile"><i class="far fa-heart fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</row>
+        </nav>
+    </div>
+
+</div>
+
 <div class="container" id="con_prof">
     <div>
         <div id="box_info">
@@ -51,13 +47,6 @@
             <div id="info_user">
                 <div id="top_info">
                     <h1 id="auth"> -- </h1>
-                    <a href="/account/edit">
-                        <button type="submit" class="btn btn-light pull-right" id="edit_btn">Edit Profile</button>
-                    </a>
-                    <a>
-                        <!--<i class="fas fa-cog fa-2x"></i>-->
-                        <img src="img/settings.png">
-                    </a>
                 </div>
                 <ul id="statistics">
                     <li id="li_post">
@@ -65,11 +54,11 @@
                         posts
                     </li>
                     <li id="li_followers">
-                        <span class="num_li">88 </span>
+                        <span class="num_li">- </span>
                         followers
                     </li>
                     <li id="li_following">
-                        <span class="num_li">58 </span>
+                        <span class="num_li">- </span>
                         following
                     </li>
                 </ul>
@@ -118,53 +107,6 @@
     </div>
 </div>
 
-<!--<div id="auth_box">-->
-
-<!--<div id="in_auth">-->
-<!--<span id="auth"> &#45;&#45; </span>-->
-<!--</div>-->
-<!--<div id="edit_box">-->
-<!--<form method='post' action='/logout' enctype="multipart/form-data" id="logout_box">-->
-<!--<button id="logout" class="btn btn-primary " type="submit"> Logout</button>-->
-<!--</form>-->
-<!--&lt;!&ndash;<button id="change_username" type="button" class="btn btn-primary" data-toggle="modal"&ndash;&gt;-->
-<!--&lt;!&ndash;data-target="#exampleModalCenter">&ndash;&gt;-->
-<!--&lt;!&ndash;Change Username&ndash;&gt;-->
-<!--&lt;!&ndash;</button>&ndash;&gt;-->
-<!--<button id="change_pass" type="button" class="btn btn-primary" data-toggle="modal"-->
-<!--data-target="#exampleModalCenter2">-->
-<!--Change Password-->
-<!--</button>-->
-<!--</div>-->
-
-<!--</div>-->
-
-
-<!--&lt;!&ndash; Modal &ndash;&gt;-->
-<!--<div class="modal fade modal_id" id="exampleModalCenter" tabindex="-1" role="dialog"-->
-<!--aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
-<!--<div class="modal-dialog modal-dialog-centered" role="document">-->
-<!--<div class="modal-content">-->
-<!--<div class="modal-header">-->
-<!--<h5 class="modal-title" id="exampleModalLongTitle">New username</h5>-->
-<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--<span aria-hidden="true">&times;</span>-->
-<!--</button>-->
-<!--</div>-->
-<!--<div class="modal-body">-->
-<!--<input type="text" class="form-control " id="new_id" placeholder="new username" aria-label="Recipient"-->
-<!--aria-describedby="basic-addon2">-->
-<!--<div>-->
-<!--<span id="check_id"></span>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="modal-footer">-->
-<!--&lt;!&ndash;<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>&ndash;&gt;-->
-<!--<button type="button" class="btn btn-primary" data-dismiss="modal" id="save_id">Save changes</button>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
 
 <div class="modal fade modal_id" id="exampleModalCenter2" tabindex="-1" role="dialog"
      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

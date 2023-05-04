@@ -1,6 +1,6 @@
 var getInfo = function () {
     $.post("/getInfo", function (data) {
-        var img_url = "http://localhost:9000/imgProfile/";
+        var img_url = "imgProfile/";
         if (data['status']) {
             if (data['profile']) {
                 $('#profileImage').attr('src', img_url + data['profile']);
@@ -34,29 +34,6 @@ $('#new_pass').on('input', function (evt) {
     });
 });
 
-// $('#new_id').on('input', function (evt) {
-//     $.post("/checkID", {usernameNew: $("#new_id").val()}, function (data) {
-//         console.log(data['msg']);
-//         if (data['status']) {
-//             $('#check_id').html(data['msg']);
-//             $('#check_id').css('color' , 'green');
-//             $('#save_id').css('display', 'block');
-//
-//         }
-//         else {
-//             $('#check_id').html(data['msg']);
-//             $('#check_id').css('color' , 'red');
-//             $('#save_id').css('display', 'none')
-//         }
-//         $('#save_id').click(function () {
-//             $.post("/changeID", {usernameNew: $("#new_id").val()}, function (data) {
-//                 $("#auth").html(data['res']);
-//                 $('#new_id' ).val('');
-//             });
-//         });
-//
-//     });
-// });
 
 $("#profileImage").click(function(e) {
     $("#profileBtn").click();
@@ -78,11 +55,5 @@ $("#profileBtn").change(function() {
     readURL(this);
     $('#set_btn' ).css('display' , 'block');
 });
-/*$(function(){
-    $('.box_item').click(function(){
-        $(".box_item").each(function(){
-            alert($(this).attr('id'));
-        });
-    });
-});*/
+
 getInfo();

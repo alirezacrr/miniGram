@@ -1,3 +1,5 @@
+let port = 9000; // PORT
+
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
@@ -28,7 +30,7 @@ db.on('error', function () {
     console.log("oh oh");
 });
 db.once('connected', function () {
-    console.log('mongo omad :D');
+    console.log('mongo run :D');
 });
 
 var imageSchema = new mongoose.Schema({
@@ -252,9 +254,8 @@ app.post("/signup", function (req, resp, next) {
                 if (err) {
                     throw err
                 }
-                ;
                 if (users.length) {
-                    resp.json({status: false, msg: "user tekrari"});
+                    resp.json({status: false, msg: "This username exists"});
                 }
                 else {
                     var newUser = userModel({
@@ -265,17 +266,17 @@ app.post("/signup", function (req, resp, next) {
                     console.log(newUser);
                     newUser.save();
                     req.session.auth = {username: req.body['username']};
-                    resp.json({status: true, msg: "afrin"});
+                    resp.json({status: true, msg: "success"});
                 }
             })
 
         }
         else {
-            resp.json({status: false, msg: "pass nabayad zire 4 bashe "});
+            resp.json({status: false, msg: "Password must be at least 4 characters long "});
         }
     }
     else {
-        resp.json({status: false, msg: "username or pasword nadri ke"});
+        resp.json({status: false, msg: "username or password is empty"});
     }
 });
 
@@ -286,7 +287,6 @@ app.post('/upload', function (req, res) {
         } else {
             if (req.file === undefined) {
                 res.redirect('/official');
-                console.log("khali")
             } else {
                 var newUser = imageModel({
                     like_count: 0,
@@ -332,7 +332,6 @@ app.post("/profile", function (req, res, next) {
         } else {
             if (req.file === undefined) {
                 res.redirect('/official');
-                console.log("khali")
             } else {
 
                 userModel.update({'username': req.session.auth.username}, {
@@ -367,16 +366,12 @@ app.post('/like', function (req, res, next) {
             var liked = img.liked_users;
             liked = img.liked_users.split(',');
             if (img.liked_users.includes(req.session.auth.username)) {
-                console.log('like karde');
-                var liked2 = liked.indexOf(req.session.auth.username);
-                console.log(count - 1);
-                delete liked[liked2];
-                liked = liked.filter(Boolean);
-                console.log(liked);
+                var liked_index = liked.indexOf(req.session.auth.username);
+                liked.splice(liked_index, 1);
                 imageModel.update({_id: req.body.ides}, {
                     $set:
                         {
-                            'liked_users': liked,
+                            'liked_users': JSON.stringify(liked),
                             'like_count': --count
                         }
                 }, function (err, img) {
@@ -390,15 +385,11 @@ app.post('/like', function (req, res, next) {
                 res.json({msg: count, status: false})
             }
             else {
-                console.log('like nkrde');
-                console.log(liked);
                 liked.push(req.session.auth.username);
-                console.log(count + 1);
-                console.log(liked);
                 imageModel.update({_id: req.body.ides}, {
                     $set:
                         {
-                            'liked_users': liked,
+                            'liked_users': JSON.stringify(liked),
                             'like_count': ++count
                         }
                 }, function (err, img) {
@@ -477,7 +468,6 @@ app.post("/comment", function (req, resp, next) {
     });
 
 });
-
-app.listen(9000);
-console.log("app running on port 9000");
+app.listen(port);
+console.log("app running on port "+port);
 

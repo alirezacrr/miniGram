@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-    <title>Aligram</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>MiniGram</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
-<row>
-    <nav class="navbar navbar-expand bg-light sticky-top " id="nav">
-        <div class="collapse navbar-collapse col" id="navbar">
-            <div class="col-10 offset-1" id="box_nav">
-                <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="text-align: center">
-                    <a class="nav-link nav_a pl-3" href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 nav_item"></div>
-                <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="display: flex">
-                    <!--<div class="col-4">-->
-                        <a class="nav-link nav_a pl-3" href="#"><i class="fas fa-home fa-2x"></i></a>
-                    <!--</div>-->
-                    <!--<div class="col-4">-->
-                        <a  class="nav-link nav_a pl-3" href="/profile"><i class="far fa-heart fa-2x"></i></a>
-                    <!--</div>-->
-                    <!--<div class="col-4">-->
-                        <a class="nav-link nav_a pl-3" href="#"><i class="far fa-user-circle fa-2x"></i></a>
-                    <!--</div>-->
+<div>
+    <div>
+        <nav class="navbar navbar-expand bg-light sticky-top " id="nav">
+            <div class="collapse navbar-collapse col" id="navbar">
+                <div class="col-10 offset-1" id="box_nav">
+                    <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="text-align: center">
+                        <a class="nav-link nav_a pl-3" href="/"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 nav_item"></div>
+                    <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3 nav_item" style="display: flex">
+                        <a class="nav-link nav_a pl-3" href="/profile"><i class="far fa-heart fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</row>
+        </nav>
+    </div>
 
+</div>
 <form method='post' action='/upload' enctype="multipart/form-data" id="form_upload">
     <input id="uploadFile" placeholder="Choose image" disabled="disabled"/>
     <div class="fileUpload btn btn-primary">

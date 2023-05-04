@@ -3,7 +3,7 @@ errorBox.slideUp(0);
 
 $("#password , #username , #signUpPass , #signUpUser").keyup(function (event) {
     if (event.keyCode === 13) {
-        if (window.location.href === 'http://localhost:9000/') {
+        if (window.location.pathname === '/') {
             $("#login_btn").click();
         }
         else {
@@ -17,8 +17,8 @@ $("#login_btn").click(function () {
     console.log({username: $("#username").val(), password: $("#password").val()});
     $.post("/login", {username: $("#username").val(), password: $("#password").val()}, function (data) {
         if (data['status']) {
-            window.location.href = 'http://localhost:9000/';
-            window.location.replace('http://localhost:9000/official');
+            window.location.href = '/';
+            window.location.replace('/official');
         }
         else {
             errorBox.slideUp(0);
@@ -33,7 +33,7 @@ $("#sign_btn").click(function () {
         // $("#info").append("<p>" + data['status'] + " || " + data['msg'] + " </p>");
         if (data['status']) {
             getInfo();
-            window.location.replace('http://localhost:9000/official')
+            window.location.replace('/official')
         }
         else {
             errorBox.slideUp(0);
@@ -46,7 +46,7 @@ $("#sign_btn").click(function () {
 
 var getInfo = function () {
     $.post("/getInfo", function (data) {
-        // var img_url = "http://localhost:9000/upload/";
+        // var img_url = "/upload/";
         if (data['status']) {
             // if (data['profile']) {
             //     $('#profileImage').attr('src', img_url + data['profile']);
@@ -85,12 +85,12 @@ function comment(cm) {
 
 var show = function () {
     $.post("/upload3", {}, function (data) {
-        var img_url = "http://localhost:9000/upload/";
+        var img_url = "/upload/";
         $("#info").empty();
         data['msg'].forEach(function (img, index) {
             $.post("/postProfile", {user: img.user}, function (data) {
                 console.log(data);
-                $('#prof' + img._id).attr('src', "http://localhost:9000/imgProfile/" + data)
+                $('#prof' + img._id).attr('src', "/imgProfile/" + data)
             });
             $("#info").append("<div id=" + img._id + " class='box_post'>" +"<div  class='div_img_profile'>"+"<img class='img_profile' id='prof" + img._id + "' src='../img/profile.png'>"+"</>"+"</div>"+"<p class='user_post'>" + img.user + "</p>" + "<div class='all_post'>"+"<img class='post_show' src= " + img_url + img.name + ">" +"</div>"+ "<div class='info_post'>" + "<div class='box'>" + "<i  class=\"fas fa-heart btn_like\" onClick='liked(\"" + img._id + "\")' >" + "</i>" + "</div>" + "<div class='box'> " + "<p class='count'>" + "</div>" + "</p>" + "<div class='box'>" + "<i class=\"far fa-comment cm_icon\" onClick='comment(\"" + img._id + "\")'>" + "</i>" + "</div>" + "</div>" + "<div class='div_all_info'>" + "<div class='commentBox' id='commentBox" + img._id + "'>" + "</div>" + "<div class='box_com'>" + "<div class='box_more' style='display:none;' id='more" + img._id + "'>" + "<p class='more'>" + "comment more" + "</p>" + "</div>" + "<div style='display: none' class=\"input-group mb-3 input_cm\">" + "<input type=\"text\"  class=\"form-control cm_input\" placeholder=\"comment's\" aria-label=\"Recipient\" aria-describedby=\"basic-addon2\">" + "<div class=\"input-group-append\">" + "<button class=\"btn btn-outline-secondary btn_send\" type=\"button\" onclick='cm_send(\"" + img._id + "\")'>" + "Send" + "</button>" + "</div>" + "</div>" + "</div>" + "</div>" + "</div>");
             var comment = img.comment;
